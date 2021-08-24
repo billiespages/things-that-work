@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Billie Cochell Art Work">
+    <meta name="keywords" content="art, crafts, homemade, acrylic, paint, sharpies, stencils, canvas, abstract art, acrylic paint and sharpies, acrylic paint and canvas">
+    <meta name="author" content="Billie Cochell">
+    
+<title>Billie's Abstract Art</title>
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <!-- Links to stylesheets //-->
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="../theme.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Chilanka|Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    
+</head>
+    
+<body>
+    
+    <div class="container-fluid">
+        
+        
+        <div class="row">       <!-- Navigation -->
+            <div class="col-md-2 col-xs-1"></div>
+            <div class="col-md-8 col-xs-10">
+                <ul class="navbar">
+                    <li><a class="active" href="../index.html" title="Abstract Home">Home</a></li>
+                    <li><a href="../about-me.html" title="About Billie">About Billie</a></li>
+                    <li><a href="../contact-me.html" title="Contact Billie">Contact Billie</a></li> put in footer as link to about-me page and have form on about-me page 
+                    <li><a href="../gallery.html" class="embed-link" title="Gallery">Gallery</a></li>
+                    <li><a href="../custom.html" class="embed-link" title="Custom Order">Custom Order</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2 col-xs-1"></div>
+        </div>      <!-- End Navigation -->
+        
+
+        <div class="clearfix"></div>
+
+        <br>
+        <hr>
+        <br>
+
+        <!-- Logo -->
+        <div class="row">
+            <div class="col-md-4 col-xs-2"></div>
+            <div class="col-md-4 col-xs-8">
+                <a href="../index.html"><img class="img-fluid" src="../images/logo.png" alt="logo"></a> 
+                <br>
+                <h2>Artist</h2>
+            </div>
+            <div class="col-md-4 col-xs-2"></div>
+        </div>
+        <!-- End Logo -->
+        
+        <div class="clearfix"></div>
+
+        <div class="gutter"></div>
+
+
+        <a id="top"></a>
+
+    <div class="row">
+        <div class="col-md-2 col-xs-hidden"></div>
+        <div class="col-md-2 col-xs-12"></div>
+            <div class="pad">
+                <img src="" alt="" class="img-fluid margin-auto" />
+                <p class="modelnum align-center">1234</p>
+            </div>
+        <div class="col-md-2 col-xs-hidden"></div>
+    </div>
+
+
+
+
+    </div>
+    
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/esm/popper-utils.min.js.map"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/esm/popper.min.js.map"></script>
+    
+    <script>
+            // Accordion //
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+    /* Toggle between adding and removing the "active" class,
+    to highlight the button that controls the panel */
+    this.classList.toggle("active");
+
+    /* Toggle between hiding and showing the active panel */
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+            //Navigation//
+            $('nav li ul').hide().removeClass('fallback');
+     $('nav li').hover(
+      function () {
+        $('ul', this).stop().slideDown(100);
+      },
+      function () {
+        $('ul', this).stop().slideUp(100);
+        }
+        );
+        
+        //Slideshow//
+        var slideIndex = 0;
+            carousel();
+
+            function carousel() {
+              var i;
+              var x = document.getElementsByClassName("mySlides slide");
+              for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+              }
+              slideIndex++;
+              if (slideIndex > x.length) {slideIndex = 1}
+              x[slideIndex-1].style.display = "block";
+              setTimeout(carousel, 5000); // Change image every 5 seconds
+            }
+        </script>
+    
+    
+    
+</body>
+</html>
